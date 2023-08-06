@@ -1,0 +1,31 @@
+<wiidisc version="1">
+	<id game="SB4">
+		<region type="E"/>
+		<region type="P"/>
+		<region type="J"/>
+	</id>
+	<options>
+		<section name="Super Mario Galaxy 2">
+			<option name="Play the normal game?">
+                <choice name="Yes?">
+					<patch id="funny" />
+				</choice>
+			</option>
+			<option name="Unique Save?">
+                <choice name="Yes">
+					<patch id="save" />
+				</choice>
+			</option>
+		</section>
+	</options>
+    <patch id="funny" root="/FUNNY">
+        <!-- Activate ChangeRoom -->
+        <memory offset="0x800248B0" value="386000014e800020" />
+		
+		<!-- Change all collision to be Ice -->
+		<memory offset="0x80249CD0" value="386000214E800020" />
+    </patch>
+    <patch id="save" root="/FUNNY">
+		<savegame external="SaveGame" clone="false"/>
+    </patch>
+</wiidisc>
