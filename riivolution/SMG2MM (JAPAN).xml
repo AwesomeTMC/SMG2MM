@@ -38,6 +38,19 @@
 		<!-- Deactivate the beat block stuff after getting a star-->
 		<memory offset ="0x80056ED8" value="38600001"/>
 		
+		<!-- Remove Lives -->
+		<!-- Remove from Death screen-->
+		<memory offset="0x80489410" value="38600000" />
+		<memory offset="0x804894B8" value="38600001" />
+		<!-- Speed up death screen -->
+		<memory offset="0x80489550" value="38600001" />
+		<memory offset="0x80489508" value="38600000" />
+		<memory offset="0x80488D90" value="4e800020" /> <!-- playerleft appear BLR -->
+		<memory offset="0x804D3AE0" value="4e800020" /> <!-- addplayer BLR-->
+		<memory offset="0x80487154" value="60000000" />
+		<memory offset="0x80059970" value="4e800020" /> <!-- 1upboard blr -->
+		<memory offset="0x8033EB00" value="4BFFFFC0" />
+		
         <!-- GLE CODE -->
 <memory offset="0x8001BDA0" value="9421FFE07C0802A69001002439610020486123BD4BFFF2DD2C03000040820044484BAD212C03000040820038484BAFA52C0300004082002C4803A6E97C7F1B784803A7717C641B787FE5FB783C60806F3863F1E438C0000038E000004BFFEF4539610020486123B5800100247C0803A6382100204E8000204803AA192C030000408200103860005A484C831148435A0C4803D00148435A04484C82892C0300004082000848435A1C48435A20484C82752C03000040820010484BA92D4803A6654843680448436820" />
 <memory offset="0x80023980" value="38600000" />

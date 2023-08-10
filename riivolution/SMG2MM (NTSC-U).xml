@@ -38,6 +38,19 @@
 		<!-- Quite a simple patch. Instead of loading the value for the error, it loads r26, which has the file name saved in it. -->
 		<memory offset='0x805B633C' value='7F44D378' /> 
 		
+		<!-- Remove Lives -->
+		<!-- Remove from Death screen-->
+		<memory offset="0x80489410" value="38600000" />
+		<memory offset="0x804894B8" value="38600001" />
+		<!-- Speed up death screen -->
+		<memory offset="0x80489550" value="38600001" />
+		<memory offset="0x80489508" value="38600000" />
+		<memory offset="0x80488D90" value="4e800020" /> <!-- playerleft appear BLR -->
+		<memory offset="0x804D3AE0" value="4e800020" /> <!-- addplayer BLR-->
+		<memory offset="0x80487154" value="60000000" />
+		<memory offset="0x80059970" value="4e800020" /> <!-- 1upboard blr -->
+		<memory offset="0x8033EB00" value="4BFFFFC0" />
+		
 		<!-- Deactivate the beat block stuff after getting a star-->
 		<memory offset ="0x80056ED8" value="38600001"/>
 		
