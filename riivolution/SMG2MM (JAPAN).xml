@@ -25,8 +25,16 @@
         <folder external="CustomCode" disc="/CustomCode" create="true"/>
 
         <!-- PT CODE -->
-        <memory offset="0x804B7D38" value="4BB49AC8" original="4E800020"/>
         <memory offset="0x80001800" valuefile="CustomCode/Loader{$__region}.bin"/>
+		<memory offset='0x804B7D90' value='60000000' />
+		<memory offset='0x804B7E54' value='60000000' />
+		<memory offset='0x805B63A8' value='60000000' />
+		<memory offset='0x805B66B4' value='60000000' />
+		<memory offset='0x804BCFE8' value='4BB448DD' />
+		<memory offset='0x804BCE70' value='4BB44A89' />
+		<memory offset='0x804BCED0' value='4BB44A51' />
+		<memory offset='0x804BCED4' value='7C7F1B78' />
+		<memory offset='0x804B7D38' value='4BB49C3C' />
 
 		<!-- Activate All Flags (by me)-->
         <memory offset ="0x804DC438" value="38600001"/> <!-- li r3, 1 - Set return value to true -->
